@@ -36,6 +36,11 @@ class Ui_MainWindow(object):
         self.label_2 = QtWidgets.QLabel(self.centralWidget)
         self.label_2.setGeometry(QtCore.QRect(420, 390, 201, 121))
         self.label_2.setText("")
+        #添加动图
+        self.gif=QtGui.QMovie('cute.gif')
+        self.label_2.setMovie(self.gif)
+        self.gif.start() 
+        #添加动图结束
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName("label_2")
         MainWindow.setCentralWidget(self.centralWidget)
